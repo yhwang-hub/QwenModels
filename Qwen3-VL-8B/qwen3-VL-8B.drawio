@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="TBA0da8lV91HA4I5eNJR">
-    <mxGraphModel dx="1047" dy="2905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2020" dy="3432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1225,11 +1225,65 @@
         <mxCell id="MtJOG7Sel2fFMDEyNDuW-363" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-362" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MtJOG7Sel2fFMDEyNDuW-356">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MtJOG7Sel2fFMDEyNDuW-362" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;autosizeText=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;fontSize=29;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;cublasHgemm: C = A @ W^T + bias&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;W: [1152, 1536], bias: [1152]&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;2&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;    bias_add_residual_cu: 加 bias&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="470" x="1920" y="-985" as="geometry" />
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-362" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;autosizeText=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;fontSize=21;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;cublasHgemm: C = A @ W^T + bias&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;W: [1152, 1536], bias: [1152]&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;2&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;    bias_add_residual_cu: 加 bias&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="360" x="1920" y="-952.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-367" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-364" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MtJOG7Sel2fFMDEyNDuW-366">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MtJOG7Sel2fFMDEyNDuW-364" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;patch_embeds&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;[num_patches, hidden_size]&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="162.5" x="1597.5" y="-835" as="geometry" />
+          <mxGeometry height="40" width="162.5" x="1597.5" y="-850" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-372" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-366" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MtJOG7Sel2fFMDEyNDuW-371">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-366" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;vision_add_pos_embed&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;（pos_embed_interpolate_cu）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="166.25" x="1595.6200000000001" y="-772.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-370" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-369" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="MtJOG7Sel2fFMDEyNDuW-366">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-369" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;autosizeText=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;fontSize=21;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;从 [2304, 1152] (48×48) 双线性插值到&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot;&gt;实际 grid [42, 42]，按 spatial_merge 排列&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="390" x="1920" y="-795" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-374" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-371" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MtJOG7Sel2fFMDEyNDuW-373">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-371" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;hidden_states&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot;&gt;[num_patches, hidden_size]&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="162.5" x="1597.49" y="-690" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-378" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-373" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MtJOG7Sel2fFMDEyNDuW-377">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-373" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;RoPE&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;(2D RoPE)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="166.25" x="1595.6300000000003" y="-604" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-376" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-375" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MtJOG7Sel2fFMDEyNDuW-373">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-375" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;autosizeText=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;fontSize=12;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;inv_freq: 18 个频率 (head_dim/4 = 72/4 = 18)&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot;&gt;  theta = 10000.0 (ViT 专用，不同于 LLM 的 5000000)&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;2&quot; data-line=&quot;true&quot;&gt;  pos_h[i], pos_w[i] → 每个 token 的 height/width 位置&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;3&quot; data-line=&quot;true&quot;&gt;  cos/sin: [1764, 72] (head_dim = 72)&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;4&quot; data-line=&quot;true&quot;&gt;     布局: [h_freq(18), w_freq(18), h_freq(18), w_freq(18)]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="360" x="1910" y="-627" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-380" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-377" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MtJOG7Sel2fFMDEyNDuW-379">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-377" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;hidden_states&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot;&gt;[num_patches, hidden_size]&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="162.5" x="1597.51" y="-510" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-384" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-379" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MtJOG7Sel2fFMDEyNDuW-383">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-379" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;LayerNorm&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="166.25" x="1595.6400000000003" y="-420" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-382" edge="1" parent="1" source="MtJOG7Sel2fFMDEyNDuW-381" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MtJOG7Sel2fFMDEyNDuW-379">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-381" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;autosizeText=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;fontSize=21;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;layernorm_with_bias_cu: [N, 1152] → normed1 [N, 1152]&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot;&gt;(weight: [1152], bias: [1152], eps=1e-6)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="550" x="1910" y="-442.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MtJOG7Sel2fFMDEyNDuW-383" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot; style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;0&quot; data-line=&quot;true&quot;&gt;hidden_states&lt;/div&gt;&lt;div data-zone-id=&quot;0&quot; data-line-index=&quot;1&quot; data-line=&quot;true&quot;&gt;[num_patches, hidden_size]&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="162.5" x="1597.52" y="-320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
